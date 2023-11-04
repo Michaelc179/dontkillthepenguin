@@ -2,41 +2,50 @@
 //  ContentView.swift
 //  dontkillthepenguin
 //
-//  Created by Michael Chen on 11/4/23.
+//  Created by not Michael Chen on 11/4/23.
 //
 
 import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    // @Environment(\.modelContext) private var modelContext
+    // @Query private var items: [Item]
+    @State private var penguinHealth = 100
+    @State private var streakCounter = 0
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        // NavigationSplitView {
+        //     List {
+        //         ForEach(items) { item in
+        //             NavigationLink {
+        //                 Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+        //             } label: {
+        //                 Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        //             }
+        //         }
+        //         .onDelete(perform: deleteItems)
+        //     }
+        //     .toolbar {
+        //         ToolbarItem(placement: .navigationBarTrailing) {
+        //             EditButton()
+        //         }
+        //         ToolbarItem {
+        //             Button(action: addItem) {
+        //                 Label("Add Item", systemImage: "plus")
+        //             }
+        //         }
+        //     }
+        // } detail: {
+        //     Text("Select an item")
+        // }
+        VStack {
+
+            HStack {
+
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
         }
+
     }
 
     private func addItem() {
