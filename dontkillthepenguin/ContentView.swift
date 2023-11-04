@@ -9,60 +9,58 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    // @Environment(\.modelContext) private var modelContext
-    // @Query private var items: [Item]
     @State private var penguinHealth = 100
     @State private var streakCounter = 0
 
     var body: some View {
-        // NavigationSplitView {
-        //     List {
-        //         ForEach(items) { item in
-        //             NavigationLink {
-        //                 Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-        //             } label: {
-        //                 Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-        //             }
-        //         }
-        //         .onDelete(perform: deleteItems)
-        //     }
-        //     .toolbar {
-        //         ToolbarItem(placement: .navigationBarTrailing) {
-        //             EditButton()
-        //         }
-        //         ToolbarItem {
-        //             Button(action: addItem) {
-        //                 Label("Add Item", systemImage: "plus")
-        //             }
-        //         }
-        //     }
-        // } detail: {
-        //     Text("Select an item")
-        // }
         VStack {
-
+            // Streak Counter in the Top Right Corner
             HStack {
-
+                Spacer()
+                Text("Streak: \(streakCounter)")
+                    .padding(10)
+            }
+            
+            // Penguin Image
+            Image(systemName: penguinImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 200)
+                .padding()
+            
+            // HP Bar
+            ProgressBar(value: $penguinHealth)
+                .frame(height: 20)
+                .padding(.horizontal, 20)
+            
+            // Buttons
+            HStack {
+                Button(action: {
+                    // Code to add goals
+                }) {
+                    Text("Add Goals")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                Spacer()
+            }
+            .padding(20)
+        }
+            
+        private var penguinImageName: String {
+            // Determine the penguin image based on penguinHealth
+            // (You can customize this logic as needed)
+            if penguinHealth <= 0 {
+                return "penguin.sad"
+            } else if penguinHealth < 50 {
+                return "penguin.normal"
+            } else {
+                return "penguin.happy"
             }
         }
-
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
-}
 
 #Preview {
     ContentView()
