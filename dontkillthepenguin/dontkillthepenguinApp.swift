@@ -7,9 +7,11 @@
 
 import SwiftUI
 import SwiftData
+import FamilyControls
 
 @main
 struct dontkillthepenguinApp: App {
+    let center = AuthorizationCenter.shared
     var sharedModelContainer: ModelContainer = {
          let schema = Schema([
              Item.self,
@@ -25,8 +27,16 @@ struct dontkillthepenguinApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().onAppear {
+                Task {
+                    do {
+                        try await center.requestAuthorization(for: .individual)
+                    } catch {
+                        print("Failed to authenticate with error: \(error)")
+                    }
+                }
+            }
+            .modelContainer(sharedModelContainer)
         }
-        .modelContainer(sharedModelContainer)
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C48824A2AF71EBB004A305B /* ReportExtensionsSOHI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4882492AF71EBB004A305B /* ReportExtensionsSOHI.swift */; };
+		4C48824C2AF71EBB004A305B /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C48824B2AF71EBB004A305B /* TotalActivityReport.swift */; };
+		4C48824E2AF71EBB004A305B /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C48824D2AF71EBB004A305B /* TotalActivityView.swift */; };
+		4C4882532AF71EBB004A305B /* ReportExtensionsSOHI.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 4C4882472AF71EBB004A305B /* ReportExtensionsSOHI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4CBA8C0E2AF6CF5E004AE563 /* dontkillthepenguinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8C0D2AF6CF5E004AE563 /* dontkillthepenguinApp.swift */; };
 		4CBA8C102AF6CF5E004AE563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8C0F2AF6CF5E004AE563 /* ContentView.swift */; };
 		4CBA8C122AF6CF5E004AE563 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8C112AF6CF5E004AE563 /* Item.swift */; };
@@ -19,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C4882512AF71EBB004A305B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CBA8C022AF6CF5D004AE563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C4882462AF71EBB004A305B;
+			remoteInfo = ReportExtensionsSOHI;
+		};
 		4CBA8C1D2AF6CF60004AE563 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4CBA8C022AF6CF5D004AE563 /* Project object */;
@@ -35,7 +46,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4C4882572AF71EBB004A305B /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				4C4882532AF71EBB004A305B /* ReportExtensionsSOHI.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4C4882472AF71EBB004A305B /* ReportExtensionsSOHI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ReportExtensionsSOHI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4882492AF71EBB004A305B /* ReportExtensionsSOHI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExtensionsSOHI.swift; sourceTree = "<group>"; };
+		4C48824B2AF71EBB004A305B /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		4C48824D2AF71EBB004A305B /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		4C48824F2AF71EBB004A305B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4882502AF71EBB004A305B /* ReportExtensionsSOHI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReportExtensionsSOHI.entitlements; sourceTree = "<group>"; };
+		4C4882582AF7293D004A305B /* dontkillthepenguin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dontkillthepenguin.entitlements; sourceTree = "<group>"; };
 		4CBA8C0A2AF6CF5E004AE563 /* dontkillthepenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dontkillthepenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBA8C0D2AF6CF5E004AE563 /* dontkillthepenguinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dontkillthepenguinApp.swift; sourceTree = "<group>"; };
 		4CBA8C0F2AF6CF5E004AE563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C4882442AF71EBB004A305B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CBA8C072AF6CF5D004AE563 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,12 +114,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C4882482AF71EBB004A305B /* ReportExtensionsSOHI */ = {
+			isa = PBXGroup;
+			children = (
+				4C4882492AF71EBB004A305B /* ReportExtensionsSOHI.swift */,
+				4C48824B2AF71EBB004A305B /* TotalActivityReport.swift */,
+				4C48824D2AF71EBB004A305B /* TotalActivityView.swift */,
+				4C48824F2AF71EBB004A305B /* Info.plist */,
+				4C4882502AF71EBB004A305B /* ReportExtensionsSOHI.entitlements */,
+			);
+			path = ReportExtensionsSOHI;
+			sourceTree = "<group>";
+		};
 		4CBA8C012AF6CF5D004AE563 = {
 			isa = PBXGroup;
 			children = (
 				4CBA8C0C2AF6CF5E004AE563 /* dontkillthepenguin */,
 				4CBA8C1F2AF6CF60004AE563 /* dontkillthepenguinTests */,
 				4CBA8C292AF6CF60004AE563 /* dontkillthepenguinUITests */,
+				4C4882482AF71EBB004A305B /* ReportExtensionsSOHI */,
 				4CBA8C0B2AF6CF5E004AE563 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +143,7 @@
 				4CBA8C0A2AF6CF5E004AE563 /* dontkillthepenguin.app */,
 				4CBA8C1C2AF6CF60004AE563 /* dontkillthepenguinTests.xctest */,
 				4CBA8C262AF6CF60004AE563 /* dontkillthepenguinUITests.xctest */,
+				4C4882472AF71EBB004A305B /* ReportExtensionsSOHI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +151,7 @@
 		4CBA8C0C2AF6CF5E004AE563 /* dontkillthepenguin */ = {
 			isa = PBXGroup;
 			children = (
+				4C4882582AF7293D004A305B /* dontkillthepenguin.entitlements */,
 				4CBA8C0D2AF6CF5E004AE563 /* dontkillthepenguinApp.swift */,
 				4CBA8C0F2AF6CF5E004AE563 /* ContentView.swift */,
 				4CBA8C112AF6CF5E004AE563 /* Item.swift */,
@@ -136,6 +190,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4C4882462AF71EBB004A305B /* ReportExtensionsSOHI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4882542AF71EBB004A305B /* Build configuration list for PBXNativeTarget "ReportExtensionsSOHI" */;
+			buildPhases = (
+				4C4882432AF71EBB004A305B /* Sources */,
+				4C4882442AF71EBB004A305B /* Frameworks */,
+				4C4882452AF71EBB004A305B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportExtensionsSOHI;
+			productName = ReportExtensionsSOHI;
+			productReference = 4C4882472AF71EBB004A305B /* ReportExtensionsSOHI.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		4CBA8C092AF6CF5D004AE563 /* dontkillthepenguin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBA8C302AF6CF60004AE563 /* Build configuration list for PBXNativeTarget "dontkillthepenguin" */;
@@ -143,10 +214,12 @@
 				4CBA8C062AF6CF5D004AE563 /* Sources */,
 				4CBA8C072AF6CF5D004AE563 /* Frameworks */,
 				4CBA8C082AF6CF5D004AE563 /* Resources */,
+				4C4882572AF71EBB004A305B /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4C4882522AF71EBB004A305B /* PBXTargetDependency */,
 			);
 			name = dontkillthepenguin;
 			productName = dontkillthepenguin;
@@ -199,6 +272,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					4C4882462AF71EBB004A305B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					4CBA8C092AF6CF5D004AE563 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -228,11 +304,19 @@
 				4CBA8C092AF6CF5D004AE563 /* dontkillthepenguin */,
 				4CBA8C1B2AF6CF60004AE563 /* dontkillthepenguinTests */,
 				4CBA8C252AF6CF60004AE563 /* dontkillthepenguinUITests */,
+				4C4882462AF71EBB004A305B /* ReportExtensionsSOHI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4C4882452AF71EBB004A305B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CBA8C082AF6CF5D004AE563 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +343,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C4882432AF71EBB004A305B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C48824E2AF71EBB004A305B /* TotalActivityView.swift in Sources */,
+				4C48824A2AF71EBB004A305B /* ReportExtensionsSOHI.swift in Sources */,
+				4C48824C2AF71EBB004A305B /* TotalActivityReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CBA8C062AF6CF5D004AE563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +384,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C4882522AF71EBB004A305B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C4882462AF71EBB004A305B /* ReportExtensionsSOHI */;
+			targetProxy = 4C4882512AF71EBB004A305B /* PBXContainerItemProxy */;
+		};
 		4CBA8C1E2AF6CF60004AE563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4CBA8C092AF6CF5D004AE563 /* dontkillthepenguin */;
@@ -303,6 +402,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4C4882552AF71EBB004A305B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReportExtensionsSOHI/ReportExtensionsSOHI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportExtensionsSOHI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportExtensionsSOHI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguin.ReportExtensionsSOHI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C4882562AF71EBB004A305B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReportExtensionsSOHI/ReportExtensionsSOHI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportExtensionsSOHI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportExtensionsSOHI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguin.ReportExtensionsSOHI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4CBA8C2E2AF6CF60004AE563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,12 +576,14 @@
 		4CBA8C312AF6CF60004AE563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dontkillthepenguin/dontkillthepenguin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dontkillthepenguin/Preview Content\"";
-				DEVELOPMENT_TEAM = 646SHFLLYD;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -443,7 +596,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = penguin.dontkillthepenguin;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,12 +607,14 @@
 		4CBA8C322AF6CF60004AE563 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dontkillthepenguin/dontkillthepenguin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dontkillthepenguin/Preview Content\"";
-				DEVELOPMENT_TEAM = 646SHFLLYD;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -472,7 +627,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = penguin.dontkillthepenguin;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -487,11 +642,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 646SHFLLYD;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = penguin.dontkillthepenguinTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -507,11 +662,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 646SHFLLYD;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = penguin.dontkillthepenguinTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -526,10 +681,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 646SHFLLYD;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = penguin.dontkillthepenguinUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -544,10 +699,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 646SHFLLYD;
+				DEVELOPMENT_TEAM = 97SB7MA2WB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = penguin.dontkillthepenguinUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = sac.dontkillthepenguinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -559,6 +714,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C4882542AF71EBB004A305B /* Build configuration list for PBXNativeTarget "ReportExtensionsSOHI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4882552AF71EBB004A305B /* Debug */,
+				4C4882562AF71EBB004A305B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4CBA8C052AF6CF5D004AE563 /* Build configuration list for PBXProject "dontkillthepenguin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
